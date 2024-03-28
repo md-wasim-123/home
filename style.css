@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-color: black;
+  width: 100%;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1200px;
+  height: 50px;
+  padding: 33px 40px;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.logo {
+  width: 110px;
+  height: 50px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  margin-left: 37px;
+}
+.item {
+  list-style: none;
+  padding-right: 6px;
+}
+.item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding: 0 4px;
+}
+
+.item a:hover {
+  color: #00ffa7;
+}
+.menu-bar {
+  display: none;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+.hero {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #060606;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.heading-primary {
+  font-size: 5rem;
+  color: #ffffff;
+  padding: 60px 70px 0px 70px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0.4rem;
+  line-height: 5rem;
+}
+.h-gradiant {
+  background: -webkit-linear-gradient(45deg, #ffff00, #00ffa7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.1rem;
+}
+.hero p {
+  padding: 20px 50px;
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 8rem;
+  margin: 5px auto;
+  padding: 8px 12px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-bottom: 4rem;
+}
+
+.img-arrow {
+  padding: 4px 2px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 70px;
+  width: 20px;
+}
+.services {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 0px;
+}
+.heading-secondary {
+  font-size: 2rem;
+  width: 100%;
+}
+.service-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.arrow {
+  display: flex;
+  gap: 5px;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  padding: 20px 0px;
+}
+.card {
+  width: 190px;
+  height: 260px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.card-heading {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  gap: 5px;
+}
+.img-card-heading {
+  padding-top: 4px;
+}
+.card-heading p {
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+.card-body h3 {
+  font-size: 1rem;
+  padding: 10px 5px;
+  line-height: 1rem;
+}
+.card-body img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-footer {
+  border-top: 2px solid black;
+  padding: 5px;
+}
+.card-footer button {
+  border: 2px solid black;
+  float: right;
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 5.5rem;
+  margin: 5px auto;
+  padding: 4px 4px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-bottom: 4rem;
+}
+
+.card-footer-image {
+  padding: 5px 3px;
+  background: linear-gradient(45deg, #ffff00, #00ffa7);
+  border-radius: 70px;
+  width: 15px;
+}
+.footer{
+   background-color: black; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 40px;
+}
+.f-img{
+    width: 100px;
+}
+.f-img img{
+    width: 100%;
+}
+.line{
+    width: 700px;
+    height: .1px;
+    margin: 20px;
+    background-color: rgb(134, 134, 134);
+}
+
+/* Media queries for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    /* display: none; */
+    justify-content: center;
+    z-index: 0;
+    top: -200px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: column;
+    top: 60px;
+  }
+
+  .menu-bar {
+    display: block;
+    color: #ffffff;
+  }
+}
